@@ -60,6 +60,10 @@ class Main {
             DOMHandler.selectFirstProject();
             DOMHandler.displayToDos(this.#currentProject);
         }
+        if (Planner.getProjects().length === 0) {
+            DOMHandler.clearTodos();
+            DOMHandler.clearSidePanel();
+        }
     }
 
     static removeToDo(searchId) {

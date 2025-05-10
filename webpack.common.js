@@ -13,6 +13,9 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
+            minify: {
+                removeRedundantAttributes: false,
+            }
         }),
         new MiniCssExtractPlugin({
             filename: "./src/style.css",
