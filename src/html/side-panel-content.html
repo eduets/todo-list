@@ -1,0 +1,17 @@
+<form class="side-panel-content" action="" data-id="">
+    <label for="to-do-title">Title: </label>
+    <input id="to-do-title" type="text" name="toDoTitle" maxlength="30" required>
+    <label for="to-do-description">Description: </label>
+    <textarea name="toDoDescription" id="to-do-description"></textarea>
+    <label for="to-do-due-date">Due date: </label>
+    <input type="date" id="to-do-due-date" name="toDoDueDate">
+    <label for="to-do-priority">Priority: </label>
+    <select name="toDoPriority" id="to-do-priority"></select>
+    <label for="to-do-is-checked">
+        Checked: <input type="checkbox" id="to-do-is-checked" name="toDoIsChecked">
+    </label>
+    <div class="side-panel-buttons">
+        <button type="button" class="cancel-button form-button cancel">Cancel</button>
+        <button type="submit" class="confirm-button form-button">Confirm</button>
+    </div>
+</form>

@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template Webpack</title>
+    <title>To-Do List</title>
 </head>
 <body>
+    <div class="main-container">
+        <div class="header-container">
+            <header>To-Do List</header>
+        </div>
+        <div class="body-container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-title">
+                        <div>Projects</div>
+                        <button id="add-project-button" class="visual-button add-button"></button>
+                    </div>
+                    <form class="project-form" action="">
+                        <input id="project-form-name" type="text" name="projectName" placeholder="New project name" maxlength="32" required>
+                        <button type="button" class="form-button cancel">Cancel</button>
+                        <button type="submit" class="form-button">Confirm</button>
+                    </form>
+                </div>
+                <div class="sidebar-content"></div>
+            </div>
+            <div class="main-panel"></div>
+            <div class="side-panel"></div>
+        </div>
+    </div>
 </body>
 </html>
